@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="viewParameter.jsp" method="post">
+<form action="viewParameter.jsp" method="GET">
 이름 : <input type="text" name="name" size="10"> <br>
 이름 : <input type="text" name="address" size="30"> <br>
 좋아하는동물 : 
