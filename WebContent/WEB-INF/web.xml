@@ -10,6 +10,25 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  <error-page>
+  <error-code>404</error-code>
+  <location>/jsp/error404.jsp</location>
+  </error-page>
+  
+  <error-page>
+  <error-code>500</error-code>
+  <location>/jsp/error500.jsp</location>
+  </error-page>
+  
+  <error-page>
+  <exception-type>java.lang.NullPointerException</exception-type>
+  <location>/jsp/error404.jsp</location>
+  </error-page>
+  
+  
+  
+  
+  
   <context-param>
   <description>  	로깅 여부  </description>
   <param-name>logEnabled</param-name>
