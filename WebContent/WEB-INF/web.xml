@@ -10,7 +10,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <error-page>
+<!--   <error-page>
   <error-code>404</error-code>
   <location>/jsp/error404.jsp</location>
   </error-page>
@@ -23,7 +23,7 @@
   <error-page>
   <exception-type>java.lang.NullPointerException</exception-type>
   <location>/jsp/error404.jsp</location>
-  </error-page>
+  </error-page> -->
   
   
   
@@ -41,6 +41,13 @@
   <param-value>5</param-value>
   </context-param>
   
+  <jsp-config>
+  <jsp-property-group>
+  <url-pattern>/view/*</url-pattern>
+  <include-prelude>/common/variable.jspf</include-prelude>
+  <include-coda>/common/footer.jspf</include-coda>
+  </jsp-property-group>
+  </jsp-config>
   
   
   
