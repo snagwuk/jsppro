@@ -16,6 +16,6 @@ out.println("출력한 결과입니다.");
 <br>
 버퍼크기 : <%= out.getBufferSize() %> <br>
 남은크기 : <%= out.getRemaining() %> <br>
-autoflush : <%= out.isAutoFlush()b %> <br>
+autoflush : <%= out.isAutoFlush() %> <br>
 </body>
 </html>
